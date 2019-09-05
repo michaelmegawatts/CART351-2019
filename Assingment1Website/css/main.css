@@ -10,6 +10,17 @@ html, body {
 	height: 100%;
 }
 
+h2{
+  text-align: center;
+  font-family: 'Teko';
+  color: white;
+}
+h3{
+  text-align: center;
+  font-family: 'Teko';
+  color: white;
+}
+
 #myVid {
   position: fixed;
 	top:50%;
@@ -29,17 +40,17 @@ html, body {
     width: 100%;
     padding: 20px;
 	z-index: 99;
-	background: rgba(0,0,0,.5);
+	background: rgba(255,105,180,.5);
 	transition:all .3s;
 }
 
 .content:hover {
-	background: rgba(0,0,0,1);
+	background: rgba(255,105,180,.75);
 }
 
 .content h1 {
 	font-family: 'Teko';
-	font-size:50px;
+	font-size:35px;
 	position: relative;
 	animation: fadeIn 1s;
 }
@@ -55,12 +66,12 @@ html, body {
 }
 
 #myBtn {
-    width: 200px;
+    width: 100px;
     font-size: 18px;
     padding: 10px;
     border: none;
-    background: #000;
-    color: #fff;
+    background: #FF69B4;
+    color: black;
     cursor: pointer;
 	transition:all 1s;
 }
