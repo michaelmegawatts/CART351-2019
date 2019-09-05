@@ -13,6 +13,19 @@
     <p>These are my exercises and projects.</p>
     <hr></hr>
   <header>
+
+  <video autoplay loop muted poster="images/bgvideo.jpg" id="myVid">
+      <source src="video/bgvideo.mp4" type="video/mp4">
+  </video>
+
+  <section id="first">
+		<article class="content">
+			<h1>Trippy Times</h1>
+			<p>Here's a little sample of my art. Scroll down to see this year's projects</p>
+        <button id="myBtn" onclick="myFunction()">Pause</button>
+		</article>
+	</section>
+
   <!-- the main div -->
   <main>
     <ul>
@@ -55,5 +68,24 @@
 <footer>
 <p><strong>cart 351 is <em>gooooooood</em> for you :o)</strong></p>
 </footer>
+
+<script>
+		//init the vars
+		var video = document.getElementById("myVid");
+		var btn = document.getElementById("myBtn");
+
+		function myFunction(){
+
+			if(video.paused){
+				 video.play();
+    			 btn.innerHTML = "Pause";
+			} else {
+    			video.pause();
+    			btn.innerHTML = "Play";
+  			}
+		}
+
+	</script>
+
 </body>
 </html>
